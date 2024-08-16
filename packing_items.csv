@@ -1,5 +1,12 @@
 ﻿Item,people,season,accommodation,activities,transport,abroad,duration
 Book,,,,,,,1
+Tablets,Bob,,,,,,
+Passport,,,,,,y,
+Hairbrush,Anna,,,,,,1
+Games,Anna AND Bob,,,,,,
+Towel,,,Friends/Family,,,,
+Towel,,,,Swimming,,,
+Sun hat,,"Spring, Summer",,,,,
 Phone charger,,,,,,,1
 Wallet,,,,,,,1
 Keys,,,,,,,1
@@ -8,16 +15,13 @@ Water bottle,,,,,,,1
 Toothbrush,,,,,,,1
 Toothpaste,,,,,,,1
 Clothes,,,,,,,1
-Hairbrush,Anna,,,,,,1
 Day bag,,,,,,,1
 Spare book,,,,,,,3
 Laundry tablets,,,,,,,7
 Warm hat,,"Autumn, Winter",,,,,
 Gloves,,"Autumn, Winter",,,,,
-Sun hat,,"Spring, Summer",,,,,
 Suncream,,Summer,,,,,
 Sunglasses,,,,,,,1
-Towel,,,Friends/Family,,,,
 Shower gel,,,Friends/Family,,,,
 Gift,,,Friends/Family,,,,
 Tent,,,Camping,,,,
@@ -46,9 +50,8 @@ Hotel booking details,,,Hotel,,,,
 Towel,,,Other,,,,
 Shower gel,,,Other,,,,
 Swimming costume,,,,Swimming,,,
-Hair-washing stuff,Anna,,,Swimming,,,
+Shampoo,Anna,,,Swimming,,,
 Goggles,,,,Swimming,,,
-Towel,,,,Swimming,,,
 Cycling shorts,,,,Cycling,,,
 Cycling helmet,,,,Cycling,,,
 Pannier(s),,,,Cycling,,,
@@ -60,7 +63,6 @@ Bike pump,,,,Cycling,,,
 Puncture repair kit,,,,Cycling,,,
 Walking boots,,,,Hiking,,,
 Walking poles,,,,Hiking,,,
-Passport,,,,,,y,
 Foreign currency,,,,,,y,
 Plug adaptor,,,,,,y,
 Car key,,,,,Car,,

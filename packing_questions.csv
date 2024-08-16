@@ -1,0 +1,8 @@
+keyword,questionText,questionType
+duration,How many nights will you be away?,number
+people,Who is going?,multi
+season,What season is it?,multi
+accommodation,"Where will you be staying?""",multi
+activities,What activities will you be doing?,multi
+transport,How will you be travelling?,multi
+abroad,Are you travelling abroad?,yn
