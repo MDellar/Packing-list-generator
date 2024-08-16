@@ -2,7 +2,7 @@
 Create a fully customisable travel packing list based on user input.
 
 ## Overview
-The user creates a list of questions, e.g. 'How many nights will you be away for?'. They also supply a .csv file with the full list of items they may want under any eventuality, together with the information on when each item is required. The code asks the questions and compiles the list of necessary items.
+The user creates two csv files, one with questions, e.g. 'How many nights will you be away for?', and the other with the full list of items they may want under any eventuality, together with the information on when each item is required. The code asks the questions and compiles the list of necessary items.
 
 Questions can be multiple-choice, yes/no or numeric.
 
@@ -25,34 +25,29 @@ Optional packages:
 
 ## User inputs
 Two user inputs are required. These should be included in the section 'Define inputs' of the code.
-- The path to the .csv file (as a string)
-- The list of questions to ask
+- The path to the items .csv file (as a string)
+- The path to the questions .csv file (as a string)
 
-The questions are defined as a list of lists. Each question has 3 elements:
+## Setting up the questions .csv file
+An example questions csv file is provided.
+
+Each question has 3 elements which should be included in the questions csv file:
 - keyword
 - question text
 - question type
 
-The keyword should exactly match one of the column headers in the .csv file.\
+The keyword should exactly match one of the column headers in the items .csv file.
+
 The question type should be one of the following:
 - 'number' (used for questions where the answer is a number)
-- 'multi' (used for multiple-choice quesions)
+- 'multi' (used for multiple-choice questions)
 - 'yn' (used for yes/no questions)
 
-Example list of questions:
-```
-QUESTIONS = [
-  ['duration', 'How many nights will you be away?', 'number'],
-  ['people', 'Who is going?', 'multi'],
-  ['abroad', 'Are you travelling abroad? (y/n)', 'yn']
-]
-```
+## Setting up the items .csv file
+An example items csv file is provided.
 
-## Setting up the .csv file
-An example csv file is provided.
-
-Column headers should be 'Item' and then one column for each question keyword.\
-The code will not run if you have questions without an equivalent column in the csv file. It will run if you have extra columns, but they will not be used.\
+Column headers should be 'Item' and then one column for each question keyword in the questions csv file.\
+The code will not run if you have question keywords without an equivalent column in the items csv file. It will run if you have extra columns in the items csv file, but they will not be used.\
 The order of the columns (after 'Item') does not matter.
 
 Use the columns to define under what circumstances an item should be taken:
@@ -71,4 +66,4 @@ If you want to take an item either if Anna is travelling or if you are travellin
 If you want to take an item if either Anna or Bob are travelling, then under the 'people' column, enter 'Anna, Bob'.
 
 ## Running the code
-Once the .csv file is ready and the inputs are defined in the script, the code is ready to run. There is no need to edit anything else in the script.
+Once the .csv files are ready and the inputs are defined in the script, the code is ready to run. There is no need to edit anything else in the script.
