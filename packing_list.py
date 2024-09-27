@@ -38,7 +38,7 @@ with open(questionsPath, 'r', newline='') as f:
         QUESTIONS.append(row)
 
 # Check all keywords in questions csv appear in items csv column names
-missingColumns = [item for item in [x[0] for x in QUESTIONS] if item not in list(data[0].keys())[1:]]
+missingColumns = [item for item in [x[0] for x in QUESTIONS[1:]] if item not in list(data[0].keys())[1:]]
 if len(missingColumns)>0:
     print(f'Keyword(s): [{", ".join(missingColumns)}] are not in the column names in the items csv file')
     sys.exit("Exiting")
@@ -153,7 +153,7 @@ for keyword, question, Qtype, options in QUESTIONS:
 
 # Create dictionaries for question types and answer indices
 q_types = {item[0]: item[2] for item in QUESTIONS}
-ans_indices = {item[0]: index for index, item in enumerate(QUESTIONS) if item[0]!='output'}
+ans_indices = {item[0]: index for index, item in enumerate(QUESTIONS[1:]) if item[0]!='output'}
 
 # Create a class to check whether conditions for including an item are met
 class ItemClass:
