@@ -179,14 +179,14 @@ class ItemClass:
         if q_types[att]=='multi':
             # Items with 'AND'
             if 'AND' in getattr(self,att):
-                toInclude = [i for i in QUESTIONS[ans_indices[att]][2] if i in getattr(self,att)]
+                toInclude = [i for i in QUESTIONS[1:][ans_indices[att]][3] if i in getattr(self,att)]
                 if all(i in answers[ans_indices[att]] for i in toInclude):
                     return(True)
                 else:
                     return(False)
             # Items with multiple possibilities in csv ('OR')
             elif ',' in getattr(self,att):
-                toInclude = [i for i in QUESTIONS[ans_indices[att]][2] if i in getattr(self,att)]
+                toInclude = [i for i in QUESTIONS[1:][ans_indices[att]][3] if i in getattr(self,att)]
                 if any(i in answers[ans_indices[att]] for i in toInclude):
                     return(True)
                 else:
