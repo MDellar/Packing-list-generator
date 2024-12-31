@@ -219,7 +219,7 @@ for x in my_list:
         toTake.append(x.item)
 
 # Remove duplicates
-toTake = list(set(toTake))
+toTake = list(dict.fromkeys(toTake))
 
 # Write output
 if any(item in answers[-1] for item in ['.csv','.txt']):
